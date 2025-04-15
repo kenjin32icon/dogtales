@@ -6,7 +6,6 @@
     <meta name="description" content="Dog Tales Kennel - Expert dog training, breeding, and care services in Kenya">
     <title>Dog Tales Kennel | Where Dogs Become Family</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --primary-color: rgb(221, 201, 189);
@@ -139,7 +138,7 @@
             height: 100%;
             object-fit: cover;
             opacity: 0;
- transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
 
         .hero img.active {
@@ -152,6 +151,7 @@
             font-size: 4rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             margin-bottom: 0.5rem;
+            color: white;
         }
 
         .hero h2 {
@@ -273,64 +273,27 @@
             transform: translateX(10px);
         }
 
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
+        .contact-details {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details div {
             background: white;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
         }
 
-        .contact-form::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: url('https://i.pinimg.com/736x/b5/f9/25/b5f9251560ebffbd9297fb369dcd2f2a.jpg') repeat;
-            opacity: 0.05;
-            transform: rotate(30deg);
-            z-index: 0;
+        .social-links a {
+            color: var(--accent-color);
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        input, textarea {
- width: 100%;
-            padding: 0.8rem;
-            border: 2px solid var(--primary-color);
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
-            transition: border-color 0.3s ease;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-
-        button {
-            background: var(--secondary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        button:hover {
-            background: var(--accent-color);
-            transform: translateY(-2px);
+        .social-links a:hover {
+            color: var(--secondary-color);
         }
 
         footer {
@@ -361,7 +324,6 @@
 
             .hero h1 {
                 font-size: 2.5rem;
-                margin-bottom: 0.5rem;
             }
 
             .hero h2 {
@@ -388,21 +350,9 @@
                      class="logo-img">
             </a>
             <ul class="nav-links">
-                <li>
-                    <a href="#services">
-                        <span>Services</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#why-us">
-                        <span>Why Us</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <span>Contact</span>
-                    </a>
-                </li>
+                <li><a href="#services"><span>Services</span></a></li>
+                <li><a href="#why-us"><span>Why Us</span></a></li>
+                <li><a href="#contact"><span>Contact</span></a></li>
             </ul>
         </nav>
     </header>
@@ -411,35 +361,85 @@
         <img src="https://i.pinimg.com/736x/74/c7/f4/74c7f4c87aa29e75f705d18e3b8bcb66.jpg" class="active" alt="Dog Image 1">
         <img src="https://i.pinimg.com/736x/36/9b/2c/369b2c99a307a083cf3cb79dea68bcb3.jpg" alt="Dog Image 2">
         <img src="https://i.pinimg.com/736x/6c/59/34/6c5934e20d6887069487975d65ef6a6f.jpg" alt="Dog Image 3">
-
-     <h1>Dog Tales Kennel</h1>
+        <h1>Dog Tales Kennel</h1>
         <h2>Where Dogs Become Family!</h2>
+    </section>
+
+    <section class="section">
+        <div class="welcome-section">
+            <h2>Welcome to Dog Tales Kennel!</h2>
+            <p>Calling all Kenyan dog lovers! Whether you're raising dogs in the countryside, training a guardian for your Nairobi home, or just need a helping hand with your furry friend, we're here for you. Discover expert guidance on <strong>dog breeding</strong>, <strong>security training (Dog Tales Security)</strong>, and <strong>professional dog care</strong>—all tailored for Kenya's unique needs.</p>
+        </div>
     </section>
 
     <section id="services" class="section">
         <h2 class="section-title">Our Services</h2>
         <div class="services-grid">
-            <!-- Service cards remain same as original but with improved styling -->
+            <div class="service-card">
+                <h3>Dog Breeding</h3>
+                <p>Learn how to breed healthier, stronger dogs the <em>right way</em>—whether you're raising loyal <em>Africanis</em>, powerful <em>Boerboels</em>, or agile <em>German Shepherds</em>.</p>
+                <ul>
+                    <li>Choosing the best pairs for strong, healthy puppies</li>
+                    <li>Safe breeding practices for Kenya's climate</li>
+                    <li>Raising pups ready for homes, farms, or security work</li>
+                </ul>
+                <p class="service-quote">"A good breeder builds a better Kenya—one puppy at a time!"</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Dog Training (Dog Tales Security)</h3>
+                <p>Turn your dog into a confident protector! Our training adapts to Kenyan life:</p>
+                <ul>
+                    <li>Home and family protection (urban areas)</li>
+                    <li>Farm and livestock security (rural communities)</li>
+                    <li>Behavior training for noisy streets and markets</li>
+                </ul>
+                <p class="service-quote">"We don't just train dogs—we build trust!"</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Dog Handling Services</h3>
+                <p>Too busy to give your dog the attention it deserves? We offer:</p>
+                <ul>
+                    <li>Event handling for weddings/parties</li>
+                    <li>Daily care and grooming</li>
+                    <li>New owner support programs</li>
+                </ul>
+                <p class="service-quote">"In Kenya, dogs are family—we treat yours like our own!"</p>
+            </div>
         </div>
     </section>
 
     <section id="why-us" class="section why-us">
         <h2 class="section-title">Why Kenyans Love Us</h2>
         <ul>
-            <!-- Why Us list items remain same -->
+            <li><strong>Local expertise:</strong> We understand Kenya's needs—from bustling cities to quiet shambas</li>
+            <li><strong>Practical solutions:</strong> Training for security, breeding for health, care for busy lifestyles</li>
+            <li><strong>Community focus:</strong> Helping build safer, happier lives with dogs</li>
         </ul>
     </section>
 
     <section id="contact" class="section">
         <h2 class="section-title">Contact Us</h2>
-        <form class="contact-form" action="#" method="POST">
-            <!-- Form elements remain same -->
-        </form>
+        <div class="contact-details">
+            <p>Join us in making Kenya a better place for dogs and their people! 🐕✨</p>
+            <div>
+                <p>📧 info@dogtaleskennel.co.ke</p>
+                <p>📱 +254 115 411167</p>
+                <p>📍 Nairobi, Kenya</p>
+                <div class="social-links">
+                    <p>Follow us:</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2023 Dog Tales Kennel. All rights reserved.</p>
-        <p>Nairobi, Kenya | info@dogtales.co.ke | +254 712 345 678</p>
+        <p>Proudly serving Kenyan dog lovers since 2015</p>
     </footer>
 
     <script>
