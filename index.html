@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: rgb(221, 201, 189);
+            --primary-color: rgb(247, 236, 213);
             --secondary-color: #8D6E63;
             --accent-color: #FFAB91;
             --light-bg: #FFF3E0;
@@ -51,14 +51,18 @@
             display: flex;
             align-items: center;
             gap: 1rem;
-            text-decoration: none;
+        }
+
+        .logo-text {
+            font-family: 'Your Calligraphy Font', cursive; /* Replace with actual font */
+            font-size: 2rem;
+            color: var(--dark-text);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         .logo-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 2px solid white;
+            width: 200px;
+            height: auto; 
             transition: transform 0.3s ease;
         }
 
@@ -71,14 +75,9 @@
             gap: 1.5rem;
             list-style: none;
             padding: 0.5rem;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgb(250, 229, 211);
             border-radius: 30px;
             backdrop-filter: blur(5px);
-        }
-
-        .nav-links li {
-            position: relative;
-            transition: transform 0.3s ease;
         }
 
         .nav-links a {
@@ -92,7 +91,7 @@
             background: rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
             text-decoration: none;
-            color: white;
+            color: grey;
             font-weight: 500;
         }
 
@@ -114,13 +113,9 @@
             transform: translateY(-3px);
         }
 
-        .nav-links a:hover::before {
-            transform: scale(1.1);
-        }
-
         .hero {
             position: relative;
-            height: 60vh;
+ height: 60vh;
             overflow: hidden;
             text-align: center;
             margin-top: 120px;
@@ -195,7 +190,7 @@
             background: white;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.5);
             transition: transform 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -342,131 +337,132 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <a href="#" class="logo">
-                <img src="https://i.pinimg.com/736x/cb/e9/b0/cbe9b0ddd72eddb24c70069f3012b253.jpg" 
-                     alt="Dog Tales Logo" 
-                     class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#services"><span>Services</span></a></li>
-                <li><a href="#why-us"><span>Why Us</span></a></li>
-                <li><a href="#contact"><span>Contact</span></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/1.%20WhatsApp%20Image%202025-04-15%20at%206.33.05%20PM.jpeg?raw=true" class="active" alt="Dog Image 1">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/2.%20WhatsApp%20Image%202025-04-15%20at%206.33.05%20PM(1).jpeg?raw=true" alt="Dog Image 2">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/3.%20WhatsApp%20Image%202025-04-15%20at%206.29.11%20PM.jpeg?raw=true" alt="Dog Image 3">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/4.%20WhatsApp%20Image%202025-04-15%20at%206.33.03%20PM.jpeg?raw=true" alt="Dog Image 4">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/5.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM.jpeg?raw=true" alt="Dog Image 5">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/6.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM(1).jpeg?raw=true" alt="Dog Image 6">
-        <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/7.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM(2).jpeg?raw=true" alt="Dog Image 7">
-        <h1>Dog Tales Kennel</h1>
-        <h2>Where Dogs Become Family!</h2>
-    </section>
-
-    <section class="section">
-        <div class="welcome-section">
-            <h2>Welcome to Dog Tales Kennel!</h2>
-            <p>Calling all Kenyan dog lovers! Whether you're raising dogs in the countryside, training a guardian for your Nairobi home, or just need a helping hand with your furry friend, we're here for you. Discover expert guidance on <strong>dog breeding</strong>, <strong>security training (Dog Tales Security)</strong>, and <strong>professional dog care</strong>—all tailored for Kenya's unique needs.</p>
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <h2 class="section-title">Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Dog Breeding</h3>
-                <p>Learn how to breed healthier, stronger dogs the <em>right way</em>—whether you're raising loyal <em>Africanis</em>, powerful <em>Boerboels</em>, or agile <em>German Shepherds</em>.</p>
-                <ul>
-                    <li>Choosing the best pairs for strong, healthy puppies</li>
-                    <li>Safe breeding practices for Kenya's climate</li>
-                    <li>Raising pups ready for homes, farms, or security work</li>
-                </ul>
-                <p class="service-quote">"A good breeder builds a better Kenya—one puppy at a time!"</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Dog Training (Dog Tales Security)</h3>
-                <p>Turn your dog into a confident protector! Our training adapts to Kenyan life:</p>
-                <ul>
-                    <li>Home and family protection (urban areas)</li>
-                    <li>Farm and livestock security (rural communities)</li>
-                    <li>Behavior training for noisy streets and markets</li>
-                </ul>
-                <p class="service-quote">"We don't just train dogs—we build trust!"</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Dog Handling Services</h3>
-                <p>Too busy to give your dog the attention it deserves? We offer:</p>
-                <ul>
-                    <li>Event handling for weddings/parties</li>
-                    <li>Daily care and grooming</li>
-                    <li>New owner support programs</li>
-                </ul>
-                <p class="service-quote">"In Kenya, dogs are family—we treat yours like our own!"</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-us" class="section why-us">
-        <h2 class="section-title">Why Kenyans Love Us</h2>
-        <ul>
-            <li><strong>Local expertise:</strong> We understand Kenya's needs—from bustling cities to quiet shambas</li>
-            <li><strong>Practical solutions:</strong> Training for security, breeding for health, care for busy lifestyles</li>
-            <li><strong>Community focus:</strong> Helping build safer, happier lives with dogs</li>
+<header class="header">
+    <nav class="nav-container">
+        <a href="#" class="logo">
+            <img src="/home/tod/Documents/JObs/Ericos job/Images/website image/logo/logo v3.png" 
+                 alt="Dog Tales Logo" 
+                 class="logo-img fitting-logo">
+            <span class="logo-text">Dog Tales Kennels</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services"><span>Services</span></a></li>
+            <li><a href="#why-us"><span>Why Us</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
         </ul>
-    </section>
+    </nav>
+</header>
 
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-details">
-            <p>Join us in making Kenya a better place for dogs and their people! 🐕✨</p>
-            <div>
-                <p>📧 info@dogtaleskennel.co.ke</p>
-                <p>📱 +254 115 411167</p>
-                <p>📍 Nairobi, Kenya</p>
-                <div class="social-links">
-                    <p>Follow us:</p>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
-                </div>
+<section class="hero">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/1.%20WhatsApp%20Image%202025-04-15%20at%206.33.05%20PM.jpeg?raw=true" class="active" alt="Dog Image 1">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/2.%20WhatsApp%20Image%202025-04-15%20at%206.33.05%20PM(1).jpeg?raw=true" alt="Dog Image 2">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/3.%20WhatsApp%20Image%202025-04-15%20at%206.29.11%20PM.jpeg?raw=true" alt="Dog Image 3">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/4.%20WhatsApp%20Image%202025-04-15%20at%206.33.03%20PM.jpeg?raw=true" alt="Dog Image 4">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/5.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM.jpeg?raw=true" alt="Dog Image 5">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/6.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM(1).jpeg?raw=true" alt="Dog Image 6">
+    <img src="https://github.com/kenjin32icon/dogtales/blob/main/version%20two%20original/7.%20WhatsApp%20Image%202025-04-15%20at%206.33.04%20PM(2).jpeg?raw=true" alt="Dog Image 7">
+    <h1>Dog Tales Kennel</h1>
+    <h2>Where Dogs Become Family!</h2>
+</section>
+
+<section class="section">
+    <div class="welcome-section">
+        <h2>Welcome to Dog Tales Kennel!</h2>
+        <p>Calling all Kenyan dog lovers! Whether you're raising dogs in the countryside, training a guardian for your Nairobi home, or just need a helping hand with your furry friend, we're here for you. Discover expert guidance on <strong>dog breeding</strong>, <strong>security training (Dog Tales Security)</strong>, and <strong > professional dog care</strong>—all tailored for Kenya's unique needs.</p>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Dog Breeding</h3>
+            <p>Learn how to breed healthier, stronger dogs the <em>right way</em>—whether you're raising loyal <em>Africanis</em>, powerful <em>Boerboels</em>, or agile <em>German Shepherds</em>.</p>
+            <ul>
+                <li>Choosing the best pairs for strong, healthy puppies</li>
+                <li>Safe breeding practices for Kenya's climate</li>
+                <li>Raising pups ready for homes, farms, or security work</li>
+            </ul>
+            <p class="service-quote">"A good breeder builds a better Kenya—one puppy at a time!"</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Dog Training (Dog Tales Security)</h3>
+            <p>Turn your dog into a confident protector! Our training adapts to Kenyan life:</p>
+            <ul>
+                <li>Home and family protection (urban areas)</li>
+                <li>Farm and livestock security (rural communities)</li>
+                <li>Behavior training for noisy streets and markets</li>
+            </ul>
+            <p class="service-quote">"We don't just train dogs—we build trust!"</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Dog Handling Services</h3>
+            <p>Too busy to give your dog the attention it deserves? We offer:</p>
+            <ul>
+                <li>Event handling for weddings/parties</li>
+                <li>Daily care and grooming</li>
+                <li>New owner support programs</li>
+            </ul>
+            <p class="service-quote">"In Kenya, dogs are family—we treat yours like our own!"</p>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="section why-us">
+    <h2 class="section-title">Why Kenyans Love Us</h2>
+    <ul>
+        <li><strong>Local expertise:</strong> We understand Kenya's needs—from bustling cities to quiet shambas</li>
+        <li><strong>Practical solutions:</strong> Training for security, breeding for health, care for busy lifestyles</li>
+        <li><strong>Community focus:</strong> Helping build safer, happier lives with dogs</li>
+    </ul>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-details">
+        <p>Join us in making Kenya a better place for dogs and their people! 🐕✨</p>
+        <div>
+            <p>📧 info@dogtaleskennel.co.ke</p>
+            <p>📱 +254 115 411167</p>
+            <p>📍 Nairobi, Kenya</p>
+            <div class="social-links">
+                <p>Follow us:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Dog Tales Kennel. All rights reserved.</p>
-        <p>Proudly serving Kenyan dog lovers since 2023</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Dog Tales Kennel. All rights reserved.</p>
+    <p>Proudly serving Kenyan dog lovers since 2023</p>
+</footer>
 
-    <script>
-        const images = document.querySelectorAll('.hero img');
-        let currentIndex = 0;
+<script>
+    const images = document.querySelectorAll('.hero img');
+    let currentIndex = 0;
 
-        function changeImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add('active');
-        }
+    function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
 
-        setInterval(changeImage, 4000);
+    setInterval(changeImage, 4000);
 
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
